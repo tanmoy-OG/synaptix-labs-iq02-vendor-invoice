@@ -51,9 +51,9 @@ export function FileUpload() {
     <div className="w-full max-w-md mx-auto p-6 bg-white rounded-lg shadow-lg">
       <div className="space-y-4">
         <div className="space-y-2">
-          <h2 className="text-xl font-semibold text-center">Upload PDF</h2>
+          <h2 className="text-xl font-semibold text-center">Upload Image or PDF</h2>
           <p className="text-sm text-gray-500 text-center">
-            Select a PDF file to configure data extraction
+            Select an Image or PDF file to configure data extraction
           </p>
         </div>
 
@@ -79,7 +79,7 @@ export function FileUpload() {
                 <p className="mb-2 text-sm text-gray-500">
                   <span className="font-semibold">Click to upload</span> or drag and drop
                 </p>
-                <p className="text-xs text-gray-500">PDF files only</p>
+                <p className="text-xs text-gray-500">Image or PDF files only</p>
               </div>
               <input type="file" className="hidden" accept=".pdf" onChange={handleFileChange} />
             </label>

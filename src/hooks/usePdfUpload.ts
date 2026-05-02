@@ -15,7 +15,7 @@ export function usePdfUpload() {
     try {
       // Use our API client to upload the file
       const formData = new FormData();
-      formData.append('pdf_file', file);
+      formData.append('file', file);
       formData.append('mode', 'configure');
       formData.append('uid', uid);
 
@@ -59,7 +59,7 @@ export function usePdfUpload() {
     try {
       // Use our API client to upload the file for extraction
       const formData = new FormData();
-      formData.append('pdf_file', file);
+      formData.append('file', file);
       formData.append('mode', 'extract');
       formData.append('config_name', configName);
       formData.append('uid', uid);
